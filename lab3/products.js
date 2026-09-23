@@ -38,7 +38,6 @@ export const deleteProduct = (pid) => {
 //create a function to update any product given pid call this function into prg6.js and verify its working by EchoAPI
 export const updateProduct = (pid, updateItem)=>{
   const index = products.findIndex((prd) => prd.id ===pid);
-
   if (index==-1){
     return false;
   }
@@ -49,9 +48,7 @@ export const updateProduct = (pid, updateItem)=>{
 }
 export const getProductById = (pid) => {
   const index = products.findIndex((prd) => prd.id === pid);
-
   if (index === -1)
     return false;
-
   return products[index];
 };
